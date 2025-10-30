@@ -32,7 +32,7 @@ public class SauceDemoTest extends BaseTest {
             test.pass("Login successful");
         } catch (Exception e) {
             captureFailure("loginTest");
-            test.fail("Login test failed ❌: " + e.getMessage());
+            test.fail("Login test failed : " + e.getMessage());
             throw e;
         }
     }
@@ -48,7 +48,7 @@ public class SauceDemoTest extends BaseTest {
             test.pass("Added two items to cart successfully");
         } catch (Exception e) {
             captureFailure("addToCartTest");
-            test.fail("Add to cart failed ❌: " + e.getMessage());
+            test.fail("Add to cart failed: " + e.getMessage());
             throw e;
         }
     }
@@ -70,7 +70,7 @@ public class SauceDemoTest extends BaseTest {
             test.pass("Checkout completed successfully");
         } catch (Exception e) {
             captureFailure("checkoutTest");
-            test.fail("Checkout test failed ❌: " + e.getMessage());
+            test.fail("Checkout test failed: " + e.getMessage());
             throw e;
         }
     }
@@ -93,3 +93,4 @@ public class SauceDemoTest extends BaseTest {
         }
     }
 }
+
